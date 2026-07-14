@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apayo Privacy Policy</title>
+<style>
+  :root {
+    --paper: #FAF6EE;
+    --ink: #2B2418;
+    --ink-soft: #6B6155;
+    --rule: #E4DCcb;
+    --card: #FFFFFF;
+    --red: #C8352E;
+    --blue: #2B4C7E;
+    --green: #1E8E4E;
+    --link: #B22E28;
+    --shadow: rgba(43, 36, 24, 0.08);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #17140F;
+      --ink: #EDE6D8;
+      --ink-soft: #A79C89;
+      --rule: #322B20;
+      --card: #201C15;
+      --red: #E8695F;
+      --blue: #7FA3D4;
+      --green: #4FBE7C;
+      --link: #E8837B;
+      --shadow: rgba(0, 0, 0, 0.4);
+    }
+  }
+  :root[data-theme="light"] {
+    --paper: #FAF6EE; --ink: #2B2418; --ink-soft: #6B6155; --rule: #E4DCcb;
+    --card: #FFFFFF; --red: #C8352E; --blue: #2B4C7E; --green: #1E8E4E;
+    --link: #B22E28; --shadow: rgba(43, 36, 24, 0.08);
+  }
+  :root[data-theme="dark"] {
+    --paper: #17140F; --ink: #EDE6D8; --ink-soft: #A79C89; --rule: #322B20;
+    --card: #201C15; --red: #E8695F; --blue: #7FA3D4; --green: #4FBE7C;
+    --link: #E8837B; --shadow: rgba(0, 0, 0, 0.4);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: clamp(2rem, 5vw, 4.5rem) clamp(1.25rem, 5vw, 2rem) 4rem;
+  }
+
+  header.mast {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid var(--rule);
+    margin-bottom: 2.5rem;
+  }
+  .mark {
+    width: 46px; height: 46px;
+    border-radius: 11px;
+    flex: none;
+    box-shadow: 0 2px 8px var(--shadow);
+    overflow: hidden;
+    position: relative;
+    background: var(--red);
+  }
+  .mark svg { display: block; width: 100%; height: 100%; }
+  .mast .name {
+    font-size: 1.45rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+  }
+  .mast .tag {
+    font-size: 0.8rem;
+    color: var(--ink-soft);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-top: 2px;
+  }
+
+  h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2rem, 6vw, 2.9rem);
+    line-height: 1.1;
+    font-weight: 700;
+    text-wrap: balance;
+    margin: 0 0 0.6rem;
+    letter-spacing: -0.01em;
+  }
+  .updated {
+    font-size: 0.9rem;
+    color: var(--ink-soft);
+    margin: 0 0 2.5rem;
+  }
+  .lede {
+    font-size: 1.12rem;
+    color: var(--ink);
+    background: var(--card);
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--green);
+    border-radius: 10px;
+    padding: 1.25rem 1.4rem;
+    margin: 0 0 3rem;
+    box-shadow: 0 1px 3px var(--shadow);
+  }
+  .lede strong { color: var(--green); }
+
+  h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.4rem;
+    margin: 2.75rem 0 0.4rem;
+    padding-top: 1.75rem;
+    border-top: 1px solid var(--rule);
+    letter-spacing: -0.01em;
+  }
+  section:first-of-type h2 { border-top: none; padding-top: 0; }
+  h2 .num {
+    color: var(--red);
+    font-size: 0.95rem;
+    font-weight: 700;
+    font-family: -apple-system, sans-serif;
+    display: inline-block;
+    margin-right: 0.6rem;
+    vertical-align: 0.12em;
+  }
+  h3 {
+    font-size: 1.02rem;
+    margin: 1.5rem 0 0.3rem;
+    color: var(--blue);
+  }
+  p { margin: 0.7rem 0; }
+  a { color: var(--link); text-decoration: underline; text-underline-offset: 2px; }
+  a:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; border-radius: 2px; }
+
+  ul { margin: 0.7rem 0; padding-left: 1.2rem; }
+  li { margin: 0.45rem 0; }
+  li::marker { color: var(--red); }
+
+  .pill {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--green);
+    background: color-mix(in srgb, var(--green) 12%, transparent);
+    border: 1px solid color-mix(in srgb, var(--green) 35%, transparent);
+    padding: 0.15rem 0.6rem;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+
+  .contact {
+    margin-top: 3rem;
+    background: var(--card);
+    border: 1px solid var(--rule);
+    border-radius: 12px;
+    padding: 1.5rem 1.6rem;
+    box-shadow: 0 1px 3px var(--shadow);
+  }
+  .contact h2 { border: none; padding: 0; margin: 0 0 0.5rem; }
+
+  footer {
+    margin-top: 3.5rem;
+    padding-top: 1.5rem;
+    border-top: 2px solid var(--rule);
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+  }
+  .ko {
+    margin-top: 1.5rem;
+    font-size: 0.92rem;
+    color: var(--ink-soft);
+    line-height: 1.7;
+  }
+  .ko strong { color: var(--ink); }
+</style>
+
+</head>
+<body>
+<div class="wrap">
+  <header class="mast">
+    <div class="mark" aria-hidden="true">
+      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <rect width="100" height="100" fill="#C8352E"/>
+        <path d="M100 55 A45 45 0 0 1 10 55 A22.5 22.5 0 0 1 55 55 A22.5 22.5 0 0 0 100 55 Z" fill="#0047A0"/>
+        <g>
+          <rect x="42" y="26" width="16" height="48" rx="4" fill="#fff"/>
+          <rect x="26" y="42" width="48" height="16" rx="4" fill="#fff"/>
+          <rect x="44.5" y="28.5" width="11" height="43" rx="2.5" fill="#1E8E4E"/>
+          <rect x="28.5" y="44.5" width="43" height="11" rx="2.5" fill="#1E8E4E"/>
+        </g>
+      </svg>
+    </div>
+    <div>
+      <div class="name">Apayo</div>
+      <div class="tag">Korea pharmacy, translated</div>
+    </div>
+  </header>
+
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: 14 July 2026 · Effective: 14 July 2026</p>
+
+  <p class="lede">
+    <strong>Apayo does not collect your personal data.</strong> There are no
+    accounts, no sign-up, and no tracking. Everything you enter — your health
+    profile, reminders, scan history — stays on your device and is never sent
+    to us or to anyone else.
+  </p>
+
+  <section>
+    <h2><span class="num">01</span>Who we are</h2>
+    <p>
+      Apayo ("the app", "we", "us") is a medicine-information and translation
+      app that helps foreign travelers and residents understand Korean
+      over-the-counter medicines. This policy explains what the app does and
+      does not do with information, and applies to the Apayo iOS application.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">02</span>Information we collect</h2>
+    <p><span class="pill">None sent to our servers</span></p>
+    <p>
+      Apayo has <strong>no user accounts</strong> and asks for no name, email,
+      phone number, or login. We do not operate analytics, advertising, or
+      tracking SDKs. We do not build a profile of you.
+    </p>
+    <p>The following information is created and stored <strong>only on your device</strong>, and we never receive it:</p>
+    <ul>
+      <li><strong>Health profile</strong> — optional toggles you set (e.g. pregnancy, allergies, conditions) used to show personalized medicine warnings. Stored locally on your phone.</li>
+      <li><strong>Reminders</strong> — dose reminders you create, delivered as local notifications on your device.</li>
+      <li><strong>Scan activity</strong> — medicines you scan or view. Processed on your device; not uploaded.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="num">03</span>Camera &amp; photos</h2>
+    <p>
+      With your permission, Apayo uses your camera (or a photo you choose) to
+      read the text on a medicine box. This text recognition runs
+      <strong>entirely on your device</strong> using Apple's on-device Vision
+      framework. Images are <strong>not uploaded, stored on a server, or shared</strong>.
+      The app only keeps what it needs in memory to identify the medicine, and
+      you can revoke camera access at any time in iOS Settings.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">04</span>Medicine data &amp; network requests</h2>
+    <p>
+      Medicine information in Apayo comes from the public open data of the
+      <strong>Ministry of Food and Drug Safety (MFDS, 식약처)</strong> of the
+      Republic of Korea. Most of this data is bundled inside the app. For a
+      small number of less common medicines, the app may request label
+      information in real time from the Korean public data portal.
+    </p>
+    <p>
+      These requests contain only the medicine identifier being looked up.
+      They <strong>do not include any personal information about you</strong> —
+      no identity, no location, no health profile.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">05</span>Location</h2>
+    <p>
+      Apayo's pharmacy guides show a fixed, curated list of pharmacies. The app
+      does <strong>not</strong> track your GPS location or share your location
+      with anyone. If a future version offers location-based pharmacy search, it
+      will ask for permission first and this policy will be updated.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">06</span>How your information is used</h2>
+    <p>Because your information stays on your device, it is used only to make the app work for you:</p>
+    <ul>
+      <li>To show medicine warnings relevant to your health profile.</li>
+      <li>To deliver the dose reminders you set.</li>
+      <li>To identify medicines you scan.</li>
+    </ul>
+    <p>We do not sell, rent, or share any information, because we do not have it.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">07</span>Children</h2>
+    <p>
+      Apayo is a general-audience medical-information app and is not directed at
+      children under 13. It does not knowingly collect information from anyone.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">08</span>Your choices</h2>
+    <ul>
+      <li>Deleting the app removes all locally stored data (profile, reminders, history) from your device.</li>
+      <li>You can turn camera or notification permissions on or off at any time in iOS Settings.</li>
+      <li>You can clear your health profile inside the app at any time.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="num">09</span>Not medical advice</h2>
+    <p>
+      Apayo provides general information to help overcome the language barrier.
+      It is <strong>not a substitute for professional medical advice</strong>.
+      Always consult a pharmacist or doctor before taking any medicine.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">10</span>Changes to this policy</h2>
+    <p>
+      If we change how the app handles information, we will update this page and
+      revise the "Last updated" date above. Material changes will be reflected
+      in the app.
+    </p>
+  </section>
+
+  <div class="contact">
+    <h2>Contact</h2>
+    <p>
+      Questions about this policy or your privacy? Email us at
+      <a href="mailto:jacob.hw.lee@gmail.com">jacob.hw.lee@gmail.com</a>.
+    </p>
+  </div>
+
+  <div class="ko">
+    <p><strong>요약 (한국어):</strong> Apayo는 계정·로그인이 없으며 개인정보를
+      수집하지 않습니다. 건강 프로필·복용 알림·스캔 기록은 모두 사용자
+      기기에만 저장되고 서버로 전송되지 않습니다. 카메라는 약 포장 텍스트
+      인식(기기 내 처리)에만 사용되며 이미지는 업로드되지 않습니다. 의약품
+      정보는 식품의약품안전처(식약처) 공공데이터를 기반으로 합니다. 본 앱은
+      의료 조언을 대체하지 않습니다. 문의: jacob.hw.lee@gmail.com</p>
+  </div>
+
+  <footer>
+    © 2026 Apayo. This privacy policy applies to the Apayo iOS application
+    (bundle ID: com.jacobdango.apayo).
+  </footer>
+</div>
+</body>
+</html>
