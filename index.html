@@ -207,13 +207,15 @@
   </header>
 
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated: 14 July 2026 · Effective: 14 July 2026</p>
+  <p class="updated">Last updated: 15 July 2026 · Effective: 15 July 2026</p>
 
   <p class="lede">
-    <strong>Apayo does not collect your personal data.</strong> There are no
-    accounts, no sign-up, and no tracking. Everything you enter — your health
-    profile, reminders, scan history — stays on your device and is never sent
-    to us or to anyone else.
+    <strong>Apayo keeps your personal data on your device by default.</strong>
+    Your health profile, reminders, and scan history never leave your phone.
+    The one exception is <strong>reviews you choose to write</strong>: to share a
+    medicine or pharmacy review with other travelers, that review (and an
+    anonymous ID) is stored on our server so others can read it. You can delete
+    your reviews at any time. We do not run ads or trackers.
   </p>
 
   <section>
@@ -228,18 +230,26 @@
 
   <section>
     <h2><span class="num">02</span>Information we collect</h2>
-    <p><span class="pill">None sent to our servers</span></p>
+    <p><span class="pill">On-device by default</span></p>
     <p>
-      Apayo has <strong>no user accounts</strong> and asks for no name, email,
-      phone number, or login. We do not operate analytics, advertising, or
-      tracking SDKs. We do not build a profile of you.
+      Apayo asks for no name, phone number, or login to browse. We do not run
+      analytics, advertising, or tracking SDKs, and we do not build a marketing
+      profile of you.
     </p>
-    <p>The following information is created and stored <strong>only on your device</strong>, and we never receive it:</p>
+    <p>The following stays <strong>only on your device</strong>, and we never receive it:</p>
     <ul>
       <li><strong>Health profile</strong> — optional toggles you set (e.g. pregnancy, allergies, conditions) used to show personalized medicine warnings. Stored locally on your phone.</li>
       <li><strong>Reminders</strong> — dose reminders you create, delivered as local notifications on your device.</li>
       <li><strong>Scan activity</strong> — medicines you scan or view. Processed on your device; not uploaded.</li>
     </ul>
+    <p>
+      The following is collected <strong>only if you write a review</strong>
+      (see section 06): your star rating, selected tags, optional review text,
+      the medicine or pharmacy it applies to, its language, a timestamp, and an
+      <strong>anonymous user identifier</strong> (and, if you choose to sign in
+      with Apple, your linked Apple account). No name, email, or contacts are
+      required to post.
+    </p>
   </section>
 
   <section>
@@ -281,18 +291,55 @@
   </section>
 
   <section>
-    <h2><span class="num">06</span>How your information is used</h2>
-    <p>Because your information stays on your device, it is used only to make the app work for you:</p>
+    <h2><span class="num">06</span>Reviews you write</h2>
+    <p>
+      Apayo lets travelers share reviews of medicines and pharmacies. Writing a
+      review is <strong>optional</strong>. When you post one:
+    </p>
     <ul>
-      <li>To show medicine warnings relevant to your health profile.</li>
-      <li>To deliver the dose reminders you set.</li>
-      <li>To identify medicines you scan.</li>
+      <li>Your review (rating, tags, any text) is stored on our server (Supabase) and shown <strong>publicly</strong> to other users, so it is not private.</li>
+      <li>You are identified only by an <strong>anonymous ID</strong> created on your device. You may optionally upgrade to <strong>Sign in with Apple</strong> to keep your reviews across devices and earn a "verified writer" badge.</li>
+      <li>Every review passes an <strong>automated safety filter</strong> before it appears; reviews that may contain unsafe medical instructions, personal information, or abuse are held for check.</li>
+      <li>You can <strong>delete any of your own reviews</strong> at any time in the app, which removes them from our server.</li>
+      <li>To delete your account and all associated review data, email us (see Contact below) and we will erase it.</li>
     </ul>
-    <p>We do not sell, rent, or share any information, because we do not have it.</p>
+    <p>
+      Reviews are personal opinions, not medical advice. We do not sell your data.
+      We may share it only with the infrastructure provider (Supabase) that stores
+      it on our behalf, and where required by law.
+    </p>
+  </section>
+
+  <section id="guidelines">
+    <h2><span class="num">07</span>Community guidelines</h2>
+    <p>To keep reviews safe and useful, by posting you agree not to submit content that:</p>
+    <ul>
+      <li>gives specific dosage, prescription, or "take this instead" medical instructions, or claims a medicine cures a disease;</li>
+      <li>contains someone's personal information (phone, email, ID numbers);</li>
+      <li>is abusive, hateful, harassing, spam, or otherwise objectionable.</li>
+    </ul>
+    <p>
+      There is <strong>zero tolerance for objectionable content and abusive
+      users</strong>. Every review can be <strong>reported</strong> from inside
+      the app, and you can <strong>block</strong> a user so their reviews are
+      hidden from you. We review reports and remove violating content, and may
+      remove or block repeat offenders. Reported content is acted on promptly
+      (typically within 24 hours).
+    </p>
   </section>
 
   <section>
-    <h2><span class="num">07</span>Children</h2>
+    <h2><span class="num">08</span>How your information is used</h2>
+    <p>Information is used only to make the app work for you:</p>
+    <ul>
+      <li>On-device data (profile, reminders, scans) powers personalized warnings, reminders, and medicine identification — it stays on your device.</li>
+      <li>Reviews you post are used to display community ratings and reviews to other users, and to run safety moderation.</li>
+    </ul>
+    <p>We do not sell or rent your information.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">09</span>Children</h2>
     <p>
       Apayo is a general-audience medical-information app and is not directed at
       children under 13. It does not knowingly collect information from anyone.
@@ -300,16 +347,17 @@
   </section>
 
   <section>
-    <h2><span class="num">08</span>Your choices</h2>
+    <h2><span class="num">10</span>Your choices</h2>
     <ul>
       <li>Deleting the app removes all locally stored data (profile, reminders, history) from your device.</li>
       <li>You can turn camera or notification permissions on or off at any time in iOS Settings.</li>
       <li>You can clear your health profile inside the app at any time.</li>
+      <li>You can delete any review you posted from inside the app, and request full deletion of your review account by email.</li>
     </ul>
   </section>
 
   <section>
-    <h2><span class="num">09</span>Not medical advice</h2>
+    <h2><span class="num">11</span>Not medical advice</h2>
     <p>
       Apayo provides general information to help overcome the language barrier.
       It is <strong>not a substitute for professional medical advice</strong>.
@@ -318,7 +366,7 @@
   </section>
 
   <section>
-    <h2><span class="num">10</span>Changes to this policy</h2>
+    <h2><span class="num">12</span>Changes to this policy</h2>
     <p>
       If we change how the app handles information, we will update this page and
       revise the "Last updated" date above. Material changes will be reflected
@@ -335,12 +383,15 @@
   </div>
 
   <div class="ko">
-    <p><strong>요약 (한국어):</strong> Apayo는 계정·로그인이 없으며 개인정보를
-      수집하지 않습니다. 건강 프로필·복용 알림·스캔 기록은 모두 사용자
-      기기에만 저장되고 서버로 전송되지 않습니다. 카메라는 약 포장 텍스트
-      인식(기기 내 처리)에만 사용되며 이미지는 업로드되지 않습니다. 의약품
-      정보는 식품의약품안전처(식약처) 공공데이터를 기반으로 합니다. 본 앱은
-      의료 조언을 대체하지 않습니다. 문의: jacob.hw.lee@gmail.com</p>
+    <p><strong>요약 (한국어):</strong> 건강 프로필·복용 알림·스캔 기록은 모두
+      사용자 기기에만 저장되고 서버로 전송되지 않습니다. 다만 <strong>리뷰를
+      작성하면</strong> 해당 리뷰와 익명 ID가 서버(Supabase)에 저장되어 다른
+      사용자에게 공개 표시됩니다(원할 때 앱에서 삭제 가능, Apple 로그인은
+      선택). 모든 리뷰는 자동 안전 필터를 거치며, 부적절 콘텐츠·용량/처방
+      지시·개인정보·욕설은 보류·삭제됩니다. 앱 내에서 리뷰 신고 및 사용자
+      차단이 가능합니다. 카메라는 약 포장 텍스트 인식(기기 내 처리)에만
+      사용됩니다. 의약품 정보는 식품의약품안전처 공공데이터 기반이며, 본 앱은
+      의료 조언을 대체하지 않습니다. 문의·계정 삭제: jacob.hw.lee@gmail.com</p>
   </div>
 
   <footer>
